@@ -1,0 +1,4 @@
+空对象模式：化繁为简。定义类的空对象，使得Client尽可能避免处理空对象null。
+保证了程序逻辑的一致性和逻辑的简单姓。
+
+参考： /DesignPatterns/src/com/designpattern/behavioral/chain_of_responsibility/Response.java

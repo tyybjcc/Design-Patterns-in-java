@@ -1,0 +1,7 @@
+why setChanged() has to be invoked before notifyObservers():
+My Answer:
+setChanged() is has a protected modifier. Meanwhile, notifyObservers() could be invoked anywhere, even by a observer. 
+Since that, observable and observer may interact with each other with this mechanism.
+------------------------------
+refer to: 
+http://stackoverflow.com/questions/15121071/why-do-i-need-to-call-setchanged-before-i-notify-the-observers/30374250#30374250

@@ -1,0 +1,1 @@
+java.util.List -> int indexOf(Object) 查找元素使用的是元素的equals()方法，而不是==

@@ -1,0 +1,2 @@
+创建者模式的核心优势在于：
+可以创建不同表现（representation）的ConcreteBuilder

@@ -1,0 +1,3 @@
+one should use jdk version Oberver Pattern(concurrence has been taken into consideration):
+abstract Observable
+interface Observer
