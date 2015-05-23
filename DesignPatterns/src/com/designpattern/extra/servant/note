@@ -1,0 +1,7 @@
+visitor pattern vs servant pattern:
+
+Servant is simpler than visitor pattern. 
+In visitor pattern, the visitor object rely on the visited element, but serviced object not.
+
+References:
+http://stackoverflow.com/questions/27939046/design-patterns-for-php-visitor-pattern-vs-servant-pattern/30400376#30400376

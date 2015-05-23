@@ -1,0 +1,6 @@
+规格模式的强大之处在于：可以利用简单的规格通过逻辑运算方法复合而成复杂的规格
+
+规格模式的编写很精巧，规格实现类根据职责分为两类：
+1. 实现逻辑运算(AddSpecification,OrSpecification,NotSpecification)
+2. 实现具体业务判断(BizSpecification)
+ComponentSpecification通过返回实现逻辑运算的规格实现类，竟然将这部分功能赋予了自己；接着，BizSpecification类通过继承就具备了所有的功能。
