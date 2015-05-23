@@ -1,4 +1,4 @@
-package com.designpattern.behavioral.observer.java_version;
+package com.designpattern.behavioral.observer.jdk_version;
 
 public class Client {
 	public static void main(String[] args) {

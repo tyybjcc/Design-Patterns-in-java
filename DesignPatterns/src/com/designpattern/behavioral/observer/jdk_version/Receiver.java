@@ -1,4 +1,4 @@
-package com.designpattern.behavioral.observer.java_version;
+package com.designpattern.behavioral.observer.jdk_version;
 
 import java.util.Observable;
 import java.util.Observer;	//using jdk instead of mine
