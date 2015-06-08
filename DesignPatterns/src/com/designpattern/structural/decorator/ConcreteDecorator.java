@@ -16,7 +16,6 @@ public class ConcreteDecorator extends Decorator{
 	// operation() has been override in Decoraotr. You could also override it here 
 	@Override
 	public void operation() {
-		// TODO Auto-generated method stub
 		
 	}
 	*/
