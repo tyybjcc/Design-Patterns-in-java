@@ -1,4 +1,4 @@
-package com.designpattern.structural.proxy.dynamic_proxy;
+package com.designpattern.structural.proxy.cglib;
 
 import java.lang.reflect.Method;
 
@@ -16,6 +16,7 @@ public class CglibProxy implements MethodInterceptor {
 		enhancer.setCallback(this);
 		return enhancer.create();
 	}
+	
 	@Override
 	public Object intercept(Object obj, Method method, Object[] args,
 			MethodProxy proxy) throws Throwable {

@@ -1,20 +1,24 @@
 package com.designpattern.structural.proxy.dynamic_proxy;
 
 import java.io.FileOutputStream;
+import java.lang.reflect.Proxy;
 import java.util.Map;
 import java.util.WeakHashMap;
 
 import sun.misc.*;
-public class Client {
+public class App {
 	
 	public static void main(String[]args) {
 		ISubject subject = new Subject();
 		
 		
-		MyInvocationHandler<ISubject> myHandler = new MyInvocationHandler<ISubject>(subject);
-		ISubject proxy = DynamicProxy.getProxyInstance(myHandler);
+		MyInvocationHandler myHandler = new MyInvocationHandler(subject);
 		
-		System.out.println(proxy.do1());
+		ISubject proxy = (ISubject)Proxy.newProxyInstance(subject.getClass().getClassLoader(), subject.getClass().getInterfaces(), myHandler);
+
+		proxy.do1();
+		System.out.println();
+		proxy.do2();
 		
 		
 		
